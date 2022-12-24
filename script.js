@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         鲸
 // @namespace    https://github.com/mefengl
-// @version      0.0.2
+// @version      0.0.3
 // @description  🐋 潜入海底，浮出水面
 // @author       mefengl
 // @match        http://*/*
