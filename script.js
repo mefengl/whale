@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         鲸
 // @namespace    https://github.com/mefengl
-// @version      0.0.3
+// @version      0.0.4
 // @description  🐋 潜入海底，浮出水面
 // @author       mefengl
 // @match        http://*/*
@@ -41,5 +41,10 @@
         function () { $(this).stop().animate({ right: hide_right, }, 400); }
       )
       .appendTo("body");
+
+    // hide button if full screen
+    $(document).on("fullscreenchange", function () {
+      document.fullscreenElement ? $button.hide() : $button.show();
+    });
   });
 })();
